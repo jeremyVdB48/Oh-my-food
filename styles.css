@@ -1,0 +1,392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+.logoOhmyfood img{
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.Reservez{
+    height: 280px;
+    background-color: #f2f2f2;
+    border-top: 2px solid grey;
+}
+.position {
+    width: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(228, 227, 227);
+    
+}
+.position span{
+    padding-left: 10px;
+}
+
+
+.reservezMenu{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;   
+    
+}
+.sousTitre{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto','serif' ;
+    color: grey;
+
+}
+.boutonExplorer{
+    display: flex;
+    justify-content: center;
+        
+}
+
+.boutonExplorer button{
+    padding: 15px;
+    border: none;
+     font-weight: bold;
+    border-radius: 20px;
+    color: #f2f2f2;
+    background: linear-gradient(#9356DC,#FF79DA);
+}
+.boutonExplorer button:hover{
+    opacity: 0.8;
+    box-shadow: 3px 3px 3px grey;
+}
+
+/* SECTION FONCTIONNEMENT */
+
+.FonctionnementH1{
+    padding-left: 40px;
+
+}
+
+.fonctionnementChoix{
+    position: relative;
+    
+    
+}
+.fonctionnementChoix button{
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: none; 
+    box-shadow: 3px 3px 3px #f2f2f2;   
+}
+
+.fonctionnementChoix li{
+    list-style: none;
+}
+
+.fonctionnementChoix button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fonctionnementChoix li .choix::before{
+    content: "1";
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+    top: 17px; 
+      
+}
+
+.fonctionnementChoix li .composez::before{
+    content: "2";
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 20px;
+    position: absolute;
+    left: 30px;
+    top: 90px;
+}
+.fonctionnementChoix li .degustez::before{
+    content: "3";
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 20px;
+    position: absolute;
+    left: 30px;
+    top: 167px;
+}
+.fonctionnementChoix li button:hover{
+    background-color: rgba(128, 0, 128, 0.08);
+    
+}
+.fonctionnementChoix  li button:hover .fas{
+    color: #9356DC;
+}
+
+/* SECTION RESTAURANT */
+.Restaurants{
+    padding: 20px;
+    background-color: #f2f2f2;
+    
+}
+.restaurants{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 20px;
+
+}
+.image{
+    height: 285px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgb(0, 0, 0,.3);
+    position: relative;
+}
+.paletteImage{
+    height: 185px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+
+}
+.containerDetailEtCoeur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px; 
+}
+.coeur .far{
+    font-size: 20px;   
+}
+.nouveau{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    color: #3d9982;
+    background-color: #99E2D0;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    padding: 10px;
+    background-color: #2b2929;
+    
+}
+.titreFooter{
+    font-family:"Shrikhand",serif ;
+    color: white;
+    font-size: 10px;
+}
+.proposer{
+    color: white;
+    
+   
+}
+.proposer .fas{
+    padding-right: 10px;
+    font-size: 15px;
+}
+.devenir{
+    color: white;
+   
+    
+}
+.devenir .fas{
+    padding-right: 10px;
+    font-size: 15px;
+}
+.mentionsLegales,.contact{
+    color: white;
+       
+}
+
+         /* MENU A LA FRANCAISE */
+
+.imageRestaurant img{
+    width: 100%;
+    height: 250px;
+}
+
+.CarteEntiere{
+    background-color: #f2f2f2; 
+    border-radius: 40px 40px 0px 0px; 
+    margin-top: -55px;
+}
+.entrees{   
+    margin: 20px;    
+}
+.Plat{
+    margin: 20px;
+}
+.Desserts{
+    margin: 20px;
+}
+.soulignementH4{
+    width: 10%;
+    border-top: 3px solid #3d9982; 
+   
+}
+.restaurantH1{
+    font-family:"Shrikhand","sans-serif";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.boutonEntrees button{
+    width: 100%;
+    height: 70px;
+    line-height: 5px;
+    padding: 0px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: white;  
+}
+button h3{
+    display: flex;
+}
+.compoPrix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boutonCommander{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boutonCommander button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    box-shadow: 0,0,10px rgb(0, 0, 0,.3);
+    background: linear-gradient(#9356DC,#FF79DA);
+}
+.boutonCommander button:hover{  
+    opacity: 0.8;
+}
+
+
+/* KEYFRAMES ANIMATION */
+
+.CarteEntiere{
+  
+    animation: Abracadabra 1s linear ;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+@keyframes Abracadabra{
+    
+    0% {opacity: 0;}
+    100% {opacity: 1 ;}
+    
+}
+
+.boutonEntrees button{
+    animation: boutonCadabra 1s linear;
+    transform-origin: left;
+    z-index: 100;
+}
+@keyframes boutonCadabra {
+    0%{transform: scaleX(0);}
+    100%{transform: scaleX(1);}
+}
+body{
+    animation: chargement 1s linear;
+}
+@keyframes chargement {
+    0%{opacity: 0.1;}
+    100%{opacity: 0.9;}
+}
+.loader{
+    position:fixed;
+    top: 40%;
+    left: 12%;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: #FF79DA;
+    animation: tournicoti 1s linear ;
+    animation-fill-mode:both;
+    z-index: 10000;
+}
+@keyframes tournicoti{
+    
+    0% {transform: scale(1) ;}
+    99% {transform:scale(2) ;}
+    30% {color: #9356DC;} 
+    60% {color: #99E2D0;}
+    100%{opacity: 0; }
+    
+}
+
+/* MEDIAQUERIES */
+
+@media  screen and (min-width:800px) {
+
+    .Fonctionnement{
+        margin: 20px;
+    }
+    .fonctionnementChoix ol {
+        
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .fonctionnementChoix li{     
+        width: 100%;
+    }
+    .fonctionnementChoix li .choix::before,.composez::before,.degustez::before{
+        display: none;
+    }
+    .restaurants{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
