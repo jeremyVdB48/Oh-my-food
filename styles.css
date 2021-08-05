@@ -8,8 +8,12 @@
 body{
     padding: 0;
     margin: 0;
-    
+   
 }
+p{
+    font-family: "Roboto","sans-serif";
+}
+
 .logoOhmyfood img{
     width: 50%;
     padding: 10px;
@@ -18,11 +22,12 @@ body{
     margin-right: auto;   
 }
 .Reservez{
+    font-family: "Roboto","sans-serif";
     height: 280px;
     background-color: #f2f2f2;
     border-top: 2px solid grey;
 }
-.position {
+.position { 
     width: auto;
     display: flex;
     text-align: center;
@@ -34,6 +39,7 @@ body{
 }
 .position span{
     padding-left: 10px;
+    font-family: "Roboto","sans-serif";
 }
 
 
@@ -78,6 +84,7 @@ body{
 /* SECTION FONCTIONNEMENT */
 
 .FonctionnementH1{
+    font-family: "Shrikhand","sans-serif";
     padding-left: 40px;
 
 }
@@ -91,6 +98,7 @@ body{
     padding: 20px;
     border-radius: 10px;
     width: 90%;
+    font-family:"Roboto","sans-serif" ;
     font-weight: bold;
     margin-bottom: 20px;
     border: none; 
@@ -182,10 +190,29 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px; 
+    position: relative;
 }
 .coeur .far{
-    font-size: 20px;   
+    font-size: 20px; 
+      
 }
+.coeur .fas{
+    font-size: 20px;
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    opacity: 0;
+}
+.coeur .fas:hover{
+    transition: 1s ;
+    opacity: 1;
+    color: #9356DC;
+    text-shadow: 0 0 2px#9356DC;
+}
+.coeur .fas:hover .far{
+    color: #9356DC;
+}
+
 .nouveau{
     position: absolute;
     top: 0;
@@ -212,18 +239,20 @@ footer{
     font-size: 10px;
 }
 .proposer{
-    color: white;
-    
-   
+    color: white;  
 }
 .proposer .fas{
     padding-right: 10px;
     font-size: 15px;
 }
 .devenir{
-    color: white;
-   
-    
+    color: white;    
+}
+.proposer,.devenir,.mentionsLegales,.contact{
+    font-family: "Roboto","sans-serif";
+    font-size: 15px;
+
+
 }
 .devenir .fas{
     padding-right: 10px;
@@ -234,7 +263,7 @@ footer{
        
 }
 
-         /* MENU A LA FRANCAISE */
+         /* MENU */
 
 .imageRestaurant img{
     width: 100%;
@@ -246,6 +275,23 @@ footer{
     border-radius: 40px 40px 0px 0px; 
     margin-top: -55px;
 }
+.CarteEntiere .far{
+    font-size: 20px;
+    
+}
+.CarteEntiere .fas{
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    color: #9356DC;
+    text-shadow: 0 0 2px#9356DC;
+    opacity: 0;
+}
+.CarteEntiere .fas:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
 .entrees{   
     margin: 20px;    
 }
@@ -270,21 +316,67 @@ footer{
     width: 100%;
     height: 70px;
     line-height: 5px;
-    padding: 0px 20px;
+    padding-left: 20px;
     margin-top: 10px;
     border-radius: 20px;
     border: none;
     box-shadow: 2px 2px 2px 2px grey;
-    background-color: white;  
+    background-color: white;    
 }
-button h3{
+
+/*button h3{
     display: flex;
 }
 .compoPrix{
+    flex-grow: 1;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;    
+    
+}
+
+.check{
+    width: 15%;
+    background-color: #99E2D0;
+    overflow: hidden;
+    transform-origin: right;
+    transition: 2s;
+}
+.boutonEntrees button:hover .check{
+    width: 15%;
+    height: 100%;
+    transform: scale(1.5);
+}
+
+*/
+.box{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.prix{
+    flex-grow: 1;
+}
+.check .fas{
+    
+    color: #3d9982;
+}
+.check{
+    width: 0;
+    height: auto;
+    background-color: #99E2D0;
+    overflow: hidden;
+    transform-origin: right;
+    transition: 2s;
+}
+.box:hover .check{
+    width: 20%;
+    padding: 30px;
+    overflow: hidden;
+    
+}
+
 
 .boutonCommander{
     padding-top: 20px;
@@ -327,35 +419,37 @@ button h3{
     z-index: 100;
 }
 @keyframes boutonCadabra {
-    0%{transform: scaleX(0);}
+    0%{transform: scaleX(0.1);}
     100%{transform: scaleX(1);}
 }
 body{
-    animation: chargement 1s linear;
+    animation: chargement 2s linear;
 }
 @keyframes chargement {
     0%{opacity: 0.1;}
-    100%{opacity: 0.9;}
+    100%{opacity: 1;}
 }
 .loader{
     position:fixed;
     top: 40%;
-    left: 12%;
+    left: 20%;
     width: 100px;
     height: 100px;
     font-size: 50px;
     color: #FF79DA;
-    animation: tournicoti 1s linear ;
+    animation: tournicoti 2s linear ;
     animation-fill-mode:both;
     z-index: 10000;
 }
 @keyframes tournicoti{
     
-    0% {transform: scale(1) ;}
-    99% {transform:scale(2) ;}
-    30% {color: #9356DC;} 
-    60% {color: #99E2D0;}
-    100%{opacity: 0; }
+    0% {opacity: 1; color: #FF79DA; }
+    20% {opacity: 0;}
+    40% {color: #9356DC; opacity: 1;} 
+    60% {opacity: 0;}
+    80% {opacity: 1; color: #99E2D0;}
+    100% {opacity: 0;}
+    
     
 }
 
@@ -377,6 +471,13 @@ body{
     }
     .fonctionnementChoix li .choix::before,.composez::before,.degustez::before{
         display: none;
+    }
+    button.choix,.composez,.degustez{
+        color: white;
+        background: linear-gradient(#9356DC,#FF79DA);
+    } 
+    .choix:hover,.composez:hover,.degustez:hover{
+        opacity: 0.8;
     }
     .restaurants{
         display: grid;
