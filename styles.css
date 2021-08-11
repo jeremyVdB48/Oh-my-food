@@ -208,15 +208,7 @@ p{
     opacity: 0;
     
 }
-/*.coeur .fas:hover{
-    transition: 1s ;
-    opacity: 1;
-    color: #9356DC;
-}
-.coeur:hover{
-    transition: 1s;
-    color: #9356DC;
-}*/
+
 .coeur .fas:hover {
     transition: 1s;
     color: transparent;
@@ -229,7 +221,6 @@ p{
     opacity: 0;
 }
 
-
 .nouveau{
     position: absolute;
     top: 0;
@@ -239,6 +230,8 @@ p{
     border-radius: 5px;
     color: #3d9982;
     background-color: #99E2D0;
+    font-size: 15px;
+    line-height: 5px;
 }
 
 
@@ -281,6 +274,16 @@ footer{
 
 
          /* MENU */
+.logoOhmyfood{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 0px 10px;  
+} 
+.logoOhmyfood a{
+    color: black;
+}
+
 
 .imageRestaurant img{
     width: 100%;
@@ -300,13 +303,19 @@ footer{
     font-size: 20px;
     position: absolute;
     right: 20px;
-    color: #9356DC;
-    text-shadow: 0 0 2px#9356DC;
     opacity: 0;
 }
 .CarteEntiere .fas:hover{
     transition: 1s;
     opacity: 1;
+    color: transparent;
+    background: linear-gradient(#9356DC,#FF79DA);
+    background-clip: text;
+    cursor: pointer;
+}
+.coeurMenu:hover .far{
+    opacity: 0;
+    transition: 1s;
 }
 
 .entrees{   
@@ -317,6 +326,9 @@ footer{
 }
 .Desserts{
     margin: 20px;
+}
+.entrees,.Plat,.Desserts{
+    font-family: "Roboto","sans-serif";
 }
 .soulignementH4{
     width: 10%;
@@ -338,13 +350,15 @@ footer{
     margin-top: 10px; 
     background-color: white; 
     border: none;
-    box-shadow: 0 0 10px rgb(0, 0, 0,.3);     
+    box-shadow: 0 0 10px rgb(0, 0, 0,.3);
+    cursor: pointer;     
 }
 .grandeBox{
     height: 100%;
     display: flex;
 }
 .box1{
+   font-family: "Roboto"; 
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -352,9 +366,9 @@ footer{
    line-height: 15px;
    white-space: nowrap;
    overflow: hidden;
-   text-overflow: ellipsis;  
-    
+   text-overflow: ellipsis;     
 }
+
 
 .box2{
     display: flex;
@@ -412,6 +426,7 @@ footer{
 }
 .boutonCommander button:hover{  
     opacity: 0.8;
+    cursor: pointer;
 }
 
 
