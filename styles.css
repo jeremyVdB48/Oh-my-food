@@ -73,6 +73,7 @@ p{
      font-weight: bold;
     border-radius: 20px;
     color: #f2f2f2;
+    cursor: pointer;
     background: linear-gradient(#9356DC,#FF79DA);
 }
 .boutonExplorer button:hover{
@@ -90,8 +91,10 @@ p{
 
 .fonctionnementChoix{
     position: relative;
-    
-    
+        
+}
+.fonctionnementChoix .fas{
+    font-size: 15px;
 }
 .fonctionnementChoix button{
     padding: 20px;
@@ -101,7 +104,8 @@ p{
     font-weight: bold;
     margin-bottom: 20px;
     border: none; 
-    box-shadow: 3px 3px 3px #f2f2f2;   
+    box-shadow: 3px 3px 3px #f2f2f2; 
+    cursor: pointer;  
 }
 
 .fonctionnementChoix li{
@@ -176,6 +180,7 @@ p{
     border-radius: 10px;
     box-shadow:0 0 10px rgb(0, 0, 0,.3);
     position: relative;
+    cursor: pointer;
 }
 .paletteImage{
     height: 185px;
@@ -445,8 +450,20 @@ footer{
     
 }
 
-.boutonCarte {
+.entree {
     animation: boutonCadabra 1s linear;
+    transform-origin: left;
+    z-index: 100;
+}
+.plats{
+    animation: boutonCadabra 1s linear;
+    animation-delay: 0.2s;
+    transform-origin: right;
+    z-index: 100;
+}
+.desserts{
+    animation: boutonCadabra 1s linear;
+    animation-delay: 0.4s;
     transform-origin: left;
     z-index: 100;
 }
