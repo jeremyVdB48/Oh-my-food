@@ -44,12 +44,11 @@ p{
 
 
 .reservezMenu{
-    width: 80%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;   
-    
+    text-align: center;      
 }
 .sousTitre{
     width: 90%;
@@ -171,7 +170,7 @@ p{
 
 }
 .image{
-    height: 285px;
+    height: 265px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
@@ -185,11 +184,16 @@ p{
     object-fit: cover;
 
 }
+.detail{
+    line-height: 10px;
+}
 .containerDetailEtCoeur{
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px; 
+    border: none;
     position: relative;
 }
 .coeur .far{
@@ -199,19 +203,32 @@ p{
 .coeur .fas{
     font-size: 20px;
     position: absolute;
-    top: 36px;
+    top: 25px;
     right: 10px;
     opacity: 0;
+    
 }
-.coeur .fas:hover{
+/*.coeur .fas:hover{
     transition: 1s ;
     opacity: 1;
     color: #9356DC;
-    text-shadow: 0 0 2px#9356DC;
 }
-.coeur .fas:hover .far{
+.coeur:hover{
+    transition: 1s;
     color: #9356DC;
+}*/
+.coeur .fas:hover {
+    transition: 1s;
+    color: transparent;
+    background: linear-gradient(#9356DC,#FF79DA);
+    background-clip: text;
+    opacity: 1;
 }
+.coeur:hover .far{
+    transition: 1s;
+    opacity: 0;
+}
+
 
 .nouveau{
     position: absolute;
@@ -230,38 +247,38 @@ p{
 
 footer{
     padding: 10px;
-    background-color: #2b2929;
-    
+    background-color: #363535;   
 }
 .titreFooter{
     font-family:"Shrikhand",serif ;
     color: white;
-    font-size: 10px;
-}
-.proposer{
-    color: white;  
+    font-size: 12px;
 }
 .proposer .fas{
     padding-right: 10px;
-    font-size: 15px;
-}
-.devenir{
-    color: white;    
+    font-size: 12px;
 }
 .proposer,.devenir,.mentionsLegales,.contact{
     font-family: "Roboto","sans-serif";
+    color: white;
     font-size: 15px;
-
-
+     
+}
+.devenir{
+    display: flex;
+    align-items: center;
+    line-height: 0;
 }
 .devenir .fas{
-    padding-right: 10px;
-    font-size: 15px;
+    font-size: 11px;
+    rotate: 320deg;
+
 }
-.mentionsLegales,.contact{
-    color: white;
-       
+.devenir p{
+    padding-left: 7px;
 }
+
+
 
          /* MENU */
 
@@ -303,7 +320,7 @@ footer{
 }
 .soulignementH4{
     width: 10%;
-    border-top: 3px solid #3d9982; 
+    border-top: 3px solid #99E2D0; 
    
 }
 .restaurantH1{
@@ -312,70 +329,70 @@ footer{
     align-items: center;
     justify-content: space-between;   
 }
-.boutonEntrees button{
+
+.boutonCarte{
+    padding: 0 ; 
     width: 100%;
-    height: 70px;
-    line-height: 5px;
-    padding-left: 20px;
-    margin-top: 10px;
+    height: 80px;
     border-radius: 20px;
+    margin-top: 10px; 
+    background-color: white; 
     border: none;
-    box-shadow: 2px 2px 2px 2px grey;
-    background-color: white;    
+    box-shadow: 0 0 10px rgb(0, 0, 0,.3);     
 }
-
-/*button h3{
-    display: flex;
-}
-.compoPrix{
-    flex-grow: 1;
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: space-between;    
-    
-}
-
-.check{
-    width: 15%;
-    background-color: #99E2D0;
-    overflow: hidden;
-    transform-origin: right;
-    transition: 2s;
-}
-.boutonEntrees button:hover .check{
-    width: 15%;
+.grandeBox{
     height: 100%;
-    transform: scale(1.5);
+    display: flex;
+}
+.box1{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-left: 10px;
+   line-height: 15px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;  
+    
 }
 
-*/
-.box{
+.box2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 20px;
+}
+.box3 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.prix{
-    flex-grow: 1;
-}
-.check .fas{
-    
-    color: #3d9982;
-}
-.check{
+    justify-content: center;
     width: 0;
-    height: auto;
-    background-color: #99E2D0;
+    border-radius: 0px 20px 20px 0px;
     overflow: hidden;
-    transform-origin: right;
     transition: 2s;
+    background-color: #99E2D0;
+    color: #99E2D0;       
 }
-.box:hover .check{
-    width: 20%;
-    padding: 30px;
-    overflow: hidden;
+.box3 .far{
+    background-color: white;
+    border-radius: 50%;
+    color: #99E2D0;
+}
+.boutonCarte:hover .box3{
+    width: 25%;
+    display: flex;
+    justify-content: center;
     
 }
+.boutonCarte:hover .box3 .far{
+    animation: checkTourne 1.5s linear;
+}
+@keyframes checkTourne {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
 
 
 .boutonCommander{
@@ -413,7 +430,7 @@ footer{
     
 }
 
-.boutonEntrees button{
+.boutonCarte {
     animation: boutonCadabra 1s linear;
     transform-origin: left;
     z-index: 100;
