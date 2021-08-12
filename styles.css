@@ -317,7 +317,7 @@ footer{
     opacity: 1;
     color: transparent;
     background: linear-gradient(#9356DC,#FF79DA);
-    background-clip: text;
+    -webkit-background-clip: text;
     cursor: pointer;
 }
 .coeurMenu:hover .far{
