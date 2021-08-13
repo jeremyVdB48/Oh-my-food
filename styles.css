@@ -560,12 +560,55 @@ header,.Reservez,.Fonctionnement,.Restaurants{
         column-gap: 20px;
     }
 
-    footer{
+    /*footer{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;   
     }
-    
+    .contact{
+        line-height: 0px;
+    }*/
+   footer{
+       display: grid;
+       grid-template-columns: 1fr,1fr;
+       grid-template-rows: 1fr,1fr,1fr;
+   }
+    .titreFooter{
+        font-size: 20px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .proposer{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .devenir{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mentionsLegales{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media  screen and (min-width:1000px){
     .CarteEntiere{
