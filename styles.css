@@ -301,6 +301,7 @@ footer{
     background-color: #f2f2f2; 
     border-radius: 40px 40px 0px 0px; 
     margin-top: -55px;
+    font-family: "Roboto";
 }
 .CarteEntiere .far{
     font-size: 20px;
@@ -389,29 +390,37 @@ footer{
     width: 0;
     border-radius: 0px 20px 20px 0px;
     overflow: hidden;
-    transition: 2s;
+    transition: 1s;
     background-color: #99E2D0;
     color: #99E2D0; 
     display: flex;  
-    align-items: center;  
+    align-items: center; 
       
 }
 .box3 .fas{
-    
+
     background-color: white;
     border-radius: 50%;
     color: #99E2D0;
    
 }
 .boutonCarte:hover .box3{
-    width: 25%;
+    width: 25%; 
+    overflow: hidden;    
+}
+.box3{
+    position: relative;
+}
+.box3  .fas {
+    position: absolute;
+    right: 40%;
     
     
     
 }
 .boutonCarte:hover .box3 .fas{
     opacity: 1;
-    animation: checkTourne 1.5s linear;
+    animation: checkTourne 0.5s linear;
 }
 @keyframes checkTourne {
     0% {transform: rotate(0);}
