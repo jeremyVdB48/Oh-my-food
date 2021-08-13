@@ -162,6 +162,7 @@ p{
 }
 
 /* SECTION RESTAURANT */
+
 .Restaurants{
     padding: 20px;
     background-color: #f2f2f2;
@@ -240,8 +241,6 @@ p{
     line-height: 5px;
 }
 
-
-
 /* FOOTER */
 
 footer{
@@ -277,9 +276,8 @@ footer{
     padding-left: 7px;
 }
 
-
-
          /* MENU */
+
 .logoOhmyfood{
     display: flex;
     align-items: center;
@@ -560,14 +558,6 @@ header,.Reservez,.Fonctionnement,.Restaurants{
         column-gap: 20px;
     }
 
-    /*footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;   
-    }
-    .contact{
-        line-height: 0px;
-    }*/
    footer{
        display: grid;
        grid-template-columns: 1fr,1fr;
