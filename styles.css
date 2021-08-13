@@ -405,8 +405,7 @@ footer{
    
 }
 .boutonCarte:hover .box3{
-    width: 25%; 
-    overflow: hidden;    
+    width: 25%;     
 }
 .box3{
     position: relative;
@@ -451,6 +450,15 @@ footer{
     opacity: 0.8;
     cursor: pointer;
 }
+.footerFrancais .devenir p{
+    padding: 0;
+    margin: 0;
+    
+}
+.footerFrancais .devenir .fas{
+    margin-right: 5px;
+}
+
 
 
 /* KEYFRAMES ANIMATION */
