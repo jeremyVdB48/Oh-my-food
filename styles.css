@@ -357,18 +357,17 @@ footer{
     background-color: white; 
     border: none;
     box-shadow: 0 0 10px rgb(0, 0, 0,.3);
-    cursor: pointer;     
+    cursor: pointer; 
+    overflow: hidden;    
 }
 .grandeBox{
     height: 100%;
-    display: flex;
+    display: flex; 
 }
 .box1{
    font-family: "Roboto"; 
    font-size: 14px;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
+   text-align: left;
    padding-left: 10px;
    line-height: 15px;
    white-space: nowrap;
@@ -403,10 +402,12 @@ footer{
    
 }
 .boutonCarte:hover .box3{
-    width: 25%;     
+    width: 25%;   
+     
 }
 .box3{
     position: relative;
+    
 }
 .box3  .fas {
     position: absolute;
