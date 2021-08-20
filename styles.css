@@ -19,13 +19,15 @@ p{
     padding: 10px;
     display: block;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto; 
+      
 }
 .Reservez{
     font-family: "Roboto","sans-serif";
     height: 280px;
     background-color: #f2f2f2;
-    border-top: 2px solid grey;
+    
+   
 }
 .position { 
     width: auto;
@@ -35,6 +37,8 @@ p{
     font-weight: bold;
     padding: 10px;
     background-color: rgb(228, 227, 227);
+    box-shadow:inset 0px 5px 5px 0px rgb(143, 142, 142 , 0.5);
+    
     
 }
 .position span{
@@ -113,10 +117,15 @@ p{
     list-style: none;
 }
 
-.fonctionnementChoix button{
-    display: flex;
-    justify-content: space-evenly;
+.fonctionnementChoix button {
+   text-align: left;
+   
 }
+.fonctionnementChoix button .fas {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+ }
 
 .fonctionnementChoix li .choix::before{
     content: "1";
@@ -602,6 +611,11 @@ header,.Reservez,.Fonctionnement,.Restaurants{
     }
 }
 @media  screen and (min-width:1000px){
+    .logoOhmyfood img{
+        width: 40%;
+       padding: 20px 0px;
+
+    }
     .CarteEntiere{
         margin: 40px;
         
@@ -618,4 +632,9 @@ header,.Reservez,.Fonctionnement,.Restaurants{
         padding-bottom: 20px;
     }
     
+}
+@media  screen and (min-width:1400px){
+    .logoOhmyfood img{
+        width: 30%;
+    }
 }
