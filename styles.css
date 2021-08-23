@@ -282,7 +282,6 @@ footer{
 }
 .devenir .fas{
     font-size: 11px;
-    
     -webkit-transform:rotate(320deg) ;
 
 }
@@ -620,26 +619,24 @@ footer{
     }
 }
 @media  screen and (min-width:1000px){
+   
     .logoOhmyfood img{
         width: 40%;
        padding: 20px 0px;
+    }
+    
 
-    }
-    .CarteEntiere{
-        margin: 40px;
-        
-    }
-    .restaurantH1{
-        font-size: 20px;
-        
+    .restaurantH1 h1{
+        font-size: 25px;   
     }
     .entree,.plats,.desserts{
-        width: 33%;
-       
+        width: 33%;   
     }
     .soulignementH4{
         padding-bottom: 20px;
     }
+    
+    
     
 }
 @media  screen and (min-width:1400px){
