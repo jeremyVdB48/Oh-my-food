@@ -282,7 +282,8 @@ footer{
 }
 .devenir .fas{
     font-size: 11px;
-    rotate: 320deg;
+    
+    -webkit-transform:rotate(320deg) ;
 
 }
 .devenir p{
