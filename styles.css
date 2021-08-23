@@ -14,14 +14,18 @@ p{
     font-family: "Roboto","sans-serif";
 }
 
+/* HEADER */
+
 .logoOhmyfood img{
     width: 50%;
     padding: 10px;
     display: block;
     margin-left: auto;
-    margin-right: auto; 
-      
+    margin-right: auto;      
 }
+
+/* SECTION RESERVEZ */
+
 .Reservez{
     font-family: "Roboto","sans-serif";
     height: 280px;
@@ -505,7 +509,7 @@ footer{
     0%{transform: scaleX(0.1);}
     100%{transform: scaleX(1);}
 }
-header,.Reservez,.Fonctionnement,.Restaurants{
+.principale,.Reservez,.Fonctionnement,.Restaurants{
     animation: bodyOpacity 2s linear;
 }
 @keyframes bodyOpacity {
