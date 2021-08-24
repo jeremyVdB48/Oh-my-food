@@ -624,16 +624,26 @@ footer{
         width: 40%;
        padding: 20px 0px;
     }
-    
+    .restaurants{
+        row-gap: 40px;
+        column-gap: 40px;
+        margin: 40px 40px;
+    }
 
-    .restaurantH1 h1{
-        font-size: 25px;   
+    .restaurantH1 h2{
+        font-size: 25px; 
+        margin-left: 40px;
+          
     }
     .entree,.plats,.desserts{
         width: 33%;   
     }
     .soulignementH4{
         padding-bottom: 20px;
+    }
+    .boutonCarte{
+        
+       
     }
     
     
