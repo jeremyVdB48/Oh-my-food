@@ -186,7 +186,22 @@ p{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4,1fr);
     row-gap: 20px;
-
+}
+.laPaletteDuGout{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.laNoteEnchante{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.aLaFrancaise{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.leDeliceDesSens{
+    grid-column: 1/2;
+    grid-row: 4/5;
 }
 .image{
     height: 265px;
@@ -208,6 +223,7 @@ p{
     line-height: 10px;
 }
 .containerDetailEtCoeur{
+    color: black;
     height: 70px;
     display: flex;
     align-items: center;
@@ -240,7 +256,9 @@ p{
     transition: 1s;
     opacity: 0;
 }
-
+.image a{
+    text-decoration: none;
+}
 .nouveau{
     position: absolute;
     top: 0;
@@ -531,7 +549,7 @@ footer{
     color: #FF79DA;
     animation: tournicoti 2s linear ;
     animation-fill-mode:both;
-    
+   
 }
 @keyframes tournicoti{
     
@@ -540,12 +558,14 @@ footer{
     40% {color: #9356DC; opacity: 1;} 
     60% {opacity: 0;}
     80% {opacity: 1; color: #99E2D0;}
-    100% {opacity: 0;}  
+    99% {z-index: 1;}
+    100% {opacity: 0;z-index: -1;} 
+
 }
 
 /* MEDIAQUERIES carte principale */
 
-@media  screen and (min-width:800px) {
+@media  screen and (min-width:900px) {
 
     .Fonctionnement{
         margin: 20px;
@@ -575,7 +595,22 @@ footer{
         grid-template-rows: 1fr 1fr;
         column-gap: 20px;
     }
-
+    .laPaletteDuGout{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .laNoteEnchante{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .aLaFrancaise{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .leDeliceDesSens{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
    footer{
        display: grid;
        grid-template-columns: 1fr,1fr;
