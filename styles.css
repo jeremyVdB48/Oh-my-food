@@ -409,6 +409,10 @@ footer{
    overflow: hidden;
    text-overflow: ellipsis;     
 }
+.box1 h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 .box2{
@@ -518,7 +522,7 @@ footer{
 .plats{
     animation: boutonCadabra 1s linear;
     animation-delay: 0.2s;
-    transform-origin: right;
+    transform-origin: left;
     z-index: 100;
 }
 .desserts{
@@ -676,12 +680,6 @@ footer{
     .soulignementH4{
         padding-bottom: 20px;
     }
-    .boutonCarte{
-        
-       
-    }
-    
-    
     
 }
 @media  screen and (min-width:1400px){
