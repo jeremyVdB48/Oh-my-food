@@ -212,6 +212,10 @@ p{
     position: relative;
     cursor: pointer;
 }
+.image:hover{
+    transition-duration: 0.2s;
+    box-shadow:2px 2px 10px rgb(0, 0, 0,.8);
+}
 .paletteImage{
     height: 185px;
     width: 100%;
@@ -395,6 +399,7 @@ footer{
     cursor: pointer; 
     overflow: hidden;    
 }
+
 .grandeBox{
     height: 100%;
     display: flex; 
@@ -516,20 +521,23 @@ footer{
 
 .entree {
     animation: boutonCadabra 1s linear;
+    animation-timing-function: ease;
     transform-origin: left;
-    z-index: 100;
+    
 }
 .plats{
     animation: boutonCadabra 1s linear;
+    animation-timing-function: ease;
     animation-delay: 0.2s;
     transform-origin: left;
-    z-index: 100;
+    
 }
 .desserts{
     animation: boutonCadabra 1s linear;
+    animation-timing-function: ease;
     animation-delay: 0.4s;
     transform-origin: left;
-    z-index: 100;
+    
 }
 @keyframes boutonCadabra {
     0%{transform: scaleX(0.1);}
