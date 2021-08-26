@@ -362,7 +362,9 @@ footer{
     opacity: 0;
     transition: 1s;
 }
-
+.restaurantH1{
+    padding: 0px 20px;
+}
 .entrees{   
     margin: 20px;    
 }
@@ -665,7 +667,7 @@ footer{
         justify-content: center;
     }
 }
-@media  screen and (min-width:1000px){
+@media  screen and (min-width:1100px){
    
     .logoOhmyfood img{
         width: 40%;
@@ -676,15 +678,39 @@ footer{
         column-gap: 40px;
         margin: 40px 40px;
     }
-
+   
     .restaurantH1 h2{
         font-size: 25px; 
         margin-left: 40px;
           
     }
-    .entree,.plats,.desserts{
-        width: 33%;   
+    .CarteEntiere{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr 100px;
+        
     }
+    .restaurantH1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .Plat{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .Desserts{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .boutonCommander{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+   /* .entree,.plats,.desserts{
+        width: 33%;   
+    }*/
     .soulignementH4{
         padding-bottom: 20px;
     }
