@@ -428,6 +428,7 @@ footer{
     justify-content: flex-end;
     flex-grow: 1;
     padding: 20px;
+    font-size: 14px;
 }
 .box3 {
     width: 0;
