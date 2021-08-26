@@ -213,7 +213,7 @@ p{
     cursor: pointer;
 }
 .image:hover{
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
     box-shadow:2px 2px 10px rgb(0, 0, 0,.8);
 }
 .paletteImage{
@@ -603,6 +603,10 @@ footer{
     } 
     .choix:hover,.composez:hover,.degustez:hover{
         opacity: 0.8;
+    }
+    .image:hover{
+        transition-duration: 0.5s;
+        box-shadow:2px 2px 10px #99E2D0;    
     }
     .restaurants{
         display: grid;
